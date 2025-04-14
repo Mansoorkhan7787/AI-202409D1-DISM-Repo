@@ -1,0 +1,35 @@
+{
+    "studentId": "AI-202409D1",
+    "studentAge": 21,
+    "studentNic": true,
+    "studentName": "ali",
+    "studentHobbies": ["cricket","reading","coading"],
+    "studentAddress": {"karachi": "saddar", "peshawar": "swat"}
+},
+{
+    "studentId": "AI-202502E1",
+    "studentAge": 18,
+    "studentNic": false,
+    "studentName": "ahmed",
+    "studentHobbies": ["football","writting","coading"],
+    "studentAddress": {"karachi": "garden", "lahore": "model-town"}
+},
+
+{
+    "studentId": "AI-202408D3",
+    "studentAge": 23,
+    "studentNic": true,
+    "studentName": "basit",
+    "studentHobbies": ["boxxing","gamming","coading"],
+    "studentAddress": {"karachi": "clifton", "lahore": "hyderabad"}
+},
+
+{
+    "studentId": "AI-202503A1",
+    "studentAge": 19,
+    "studentNic": true,
+    "studentName": "haider",
+    "studentHobbies": ["cricket","singing","coading"],
+    "studentAddress": {"karachi": "tariq-road", "peshawar": "kalam"}
+}
+

@@ -1,0 +1,59 @@
+[
+    {
+        "id" : 101,
+        "name" : "iphone 14pro-max",
+        "price" : "350,000",
+        "sell" : 23,
+        "description" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi nihil facere neque voluptatibus, temporibus quae nam repelle ndus rerum deserunt. Modi accusamus nihil voluptate architecto dolores voluptatem nisi a delectus.",
+        "image" : "./images/iphone.png "
+    },
+    {
+
+        "id" : 102,
+        "name" : "Samsung 24-Ultra",
+        "price" : "380,000",
+        "sell" : 19,
+        "description" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi nihil facere neque voluptatibus, temporibus quae nam repellendus rerum deserunt. Modi accusamus nihil voluptate architecto dolores voluptatem nisi a delectus.",
+        "image" :"./images/samsung.png "
+    },
+    {
+        "id" : 103,
+        "name" : "Oppo reno",
+        "price" : "98,000",
+        "sell" : 21,
+        "description" :" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi nihil facere neque voluptatibus, temporibus quae nam repelle ndus rerum deserunt. Modi accusamus nihil voluptate architecto dolores voluptatem nisi a delectus.",
+        "image" :" ./images/oppo.png"
+    },
+    {
+        "id" : 104,
+        "name" :"Tecno Cammon",
+        "price" :"66,999",
+        "sell" : 16,
+        "description" :" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi nihil facere neque voluptatibus, temporibus quae nam repelle ndus rerum deserunt. Modi accusamus nihil voluptate architecto dolores voluptatem nisi a delectus.",
+        "image" :"./images/tecno.png "
+    },
+    {
+        "id" : 105,
+        "name" : "Vivo Y100",
+        "price" : "56,000",
+        "sell" : 31,
+        "description" :" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi nihil facere neque voluptatibus, temporibus quae nam repelle ndus rerum deserunt. Modi accusamus nihil voluptate architecto dolores voluptatem nisi a delectus.",
+        "image" :"./images/vivo.png "
+    }, 
+    {
+        "id" : 106,
+        "name" : "Infinix note-40pro",
+        "price" :"64,999",
+        "sell" :28,
+        "description" :" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi nihil facere neque voluptatibus, temporibus quae nam repelle ndus rerum deserunt. Modi accusamus nihil voluptate architecto dolores voluptatem nisi a delectus.",
+        "image" :"./images/infinix.png "
+    },
+    {
+        "id" : 107,
+        "name" : "Google pixel 7pro",
+        "price" : "70,000",
+        "sell" :36,
+        "description" :" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eligendi nihil facere neque voluptatibus, temporibus quae nam repelle ndus rerum deserunt. Modi accusamus nihil voluptate architecto dolores voluptatem nisi a delectus.",
+        "image" :"./images/google.png "
+    }
+]
