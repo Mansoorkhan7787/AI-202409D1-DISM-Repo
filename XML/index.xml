@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptech xmlns:s1="https//abc.com" xmlns:s2="https//def.com" xmlns:s3="https//ghi.com" xmlns:s4="https//jkl.com" xmlns:s5="https//mno.com">
+    <students>
+        <s1:student>
+            <s1:id>1</s1:id>
+            <s1:name>ali</s1:name>
+            <s1:course>CPISM</s1:course>
+        </s1:student>
+        <s2:student>
+            <s2:id>2</s2:id>
+            <s2:name>ahmed</s2:name>
+            <s2:course>DISM</s2:course>
+        </s2:student>
+        <s3:student>
+            <s3:id>3</s3:id>
+            <s3:name>basit</s3:name>
+            <s3:course>CPISM</s3:course>
+        </s3:student>
+        <s4:student>
+            <s4:id>4</s4:id>
+            <s4:name>owais</s4:name>
+            <s4:course>ADSE</s4:course>
+        </s4:student>
+        <s5:student>
+            <s5:id>5</s5:id>
+            <s5:name>asad</s5:name>
+            <s5:course>HDSE</s5:course>
+        </s5:student>
+    </students>
+    <sro>
+        <srm>
+            <id>1</id>
+            <name>noman</name>
+            <role>manager</role>
+        </srm>
+        <srm>
+            <id>1</id>
+            <name>faraz</name>
+            <role>asistend</role>
+        </srm>
+        <srm>
+            <id>3</id>
+            <name>malika</name>
+            <role>manager</role>
+        </srm>
+        <srm>
+            <id>4</id>
+            <name>atif</name>
+            <role>cashier</role>
+        </srm>
+        <srm>
+            <id>5</id>
+            <name>malika naz</name>
+            <role>asistend</role>
+        </srm>
+    </sro>
+</aptech>
