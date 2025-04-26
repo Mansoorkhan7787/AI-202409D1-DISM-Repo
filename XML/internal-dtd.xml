@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aptech[
+    <!ELEMENT aptech (students*,employee,sro)>
+    <!ELEMENT students (id,name,email)>
+    <!ELEMENT employee (id,name,salary)>
+    <!ELEMENT sro (id,name,role)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT salary (#PCDATA)>
+    <!ELEMENT role (#PCDATA)>
+    <!-- <!ATTLIST students aptech CDATA #REQUIRED> -->
+    <!ATTLIST students aptech CDATA #FIXED 'SFC'>
+    <!ENTITY my "aptech shahrah-e-faisal center">
+
+    ]>
+<aptech>
+    <students aptech="SFC">
+        <id></id>
+        <name>&my;</name>
+        <email></email>
+    </students>
+    <students aptech="SFC">
+        <id></id>
+        <name>&my;</name>
+        <email></email>
+    </students>
+
+    <employee>
+        <id></id>
+        <name></name>
+        <salary></salary>
+    </employee>
+
+    <sro>
+        <id></id>
+        <name></name>
+        <role></role>
+    </sro>
+
+</aptech>

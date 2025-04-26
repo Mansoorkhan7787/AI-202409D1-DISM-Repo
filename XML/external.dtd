@@ -1,0 +1,9 @@
+<!ELEMENT aptech (staff*, student)>
+<!ELEMENT staff (id, name, email)>
+<!ELEMENT student (id, name, course)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ATTLIST staff department CDATA #REQUIRED>
+<!ENTITY aptech SYSTEM "aptech shahrah-e-faisal center">
