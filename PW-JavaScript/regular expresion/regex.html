@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regular expression</title>
+    <link rel="stylesheet" href="/AI-202409D1-DISM-Repo/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container p-5">
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+                type="text"
+                name=""
+                id="userName"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+        
+        <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input
+                type="text"
+                name=""
+                id="userEmail"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Password</label>
+            <input
+                type="text"
+                name=""
+                id="userPassword"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+        
+        <div class="mb-3">
+            <label for="" class="form-label">Conform Password</label>
+            <input
+                type="text"
+                name=""
+                id="userConformPassword"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+        
+        
+
+
+    </div>
+
+  <script src="/AI-202409D1-DISM-Repo/JQuery/jquery-3.7.1.min.js"></script>  
+  <script src="/AI-202409D1-DISM-Repo/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $("#userName").keyup(function(){
+        let uName = $(this).val();
+        let uNameRE = /^[a-zA-Z\s]{3,10}$/;
+        if(!uNameRE.test(uName)){
+            $(this).css('border','2px solid red');
+            $(this).next('small').show().text('please enter a valid name').css('color','red');
+        }
+        else{
+            $(this).css('border','2px solid green');
+            $(this).next('small').hide();
+        }
+
+    })
+    $("#userEmail").keyup(function(){
+        let uEmail = $(this).val();
+        let uEmailRE =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/;
+        if(!uEmailRE.test(uEmail)){
+            $(this).css('border','2px solid red');
+            $(this).next('small').show().text('please enter a valid email').css('color','red');
+        }
+        else{
+            $(this).css('border','2px solid green');
+            $(this).next('small').hide();
+        }
+
+    })
+    $("#userPassword").keyup(function(){
+        let uPassword = $(this).val();
+        let uPasswordRE =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%&*])[a-zA-Z\d!@#$%&*]{8,}$/;
+        if(!uPasswordRE.test(uPassword)){
+            $(this).css('border','2px solid red');
+            $(this).next('small').show().text('please enter a valid password').css('color','red');
+        }
+        else{
+            $(this).css('border','2px solid green');
+            $(this).next('small').hide();
+        }
+
+    })
+    $("#userConformPassword").keyup(function(){
+        let uConformPassword = $(this).val();
+        let uConformPasswordRE =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%&*])[a-zA-Z\d!@#$%&*]{8,}$/;
+        if(!uConformPasswordRE.test(uConformPassword)){
+            $(this).css('border','2px solid red');
+            $(this).next('small').show().text('please enter a valid conform password').css('color','red');
+        }
+        else{
+            $(this).css('border','2px solid green');
+            $(this).next('small').hide();
+        }
+
+    })
+  </script>
+</body>
+</html>

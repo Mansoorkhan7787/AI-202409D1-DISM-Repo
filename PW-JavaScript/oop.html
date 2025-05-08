@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oop</title>
+</head>
+<body>
+    
+
+    <script>
+        class Human{
+            name ;
+            food ;
+            lang ;
+            constructor(sName,sFood,slang){
+                this.name = sName ;
+                this.food = sFood ;
+                this.lang = slang ;
+               
+            }
+            eat(){
+                console.log(this.name +" eat " + this.food);
+            }
+            speak(){
+                console.log( this.name +" can speak " + this.lang);
+            }  
+        }
+        let std1 = new Human("Ali","Biryani","English")
+        std1.eat();
+        std1.speak();
+
+        let std2 = new Human("basit","BBQ","urdu")
+        std2.eat();
+        std2.speak();
+
+        class Fruit{
+            name ;
+            fName ;            
+            taste ;
+            constructor(sName,fName,sTaste){
+                this.name = sName ;
+                this.fname = fName ;
+                this.taste = sTaste ;
+            }
+            eat(){
+                console.log(this.name +" eat "+ this.fname +" and his taste is " + this.taste);
+            }
+            taste(){
+                console.log()
+            }
+
+        }
+        let a = new Fruit("mutahir","mango","sweet");
+        a.eat();
+        
+        let b = new Fruit("awais","apple","saltish");
+        b.eat();
+       
+       
+    </script>
+</body>
+</html>
