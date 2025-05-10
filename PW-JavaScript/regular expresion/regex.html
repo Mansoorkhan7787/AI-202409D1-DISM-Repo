@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,28 +99,36 @@
     })
     $("#userPassword").keyup(function(){
         let uPassword = $(this).val();
-        let uPasswordRE =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%&*])[a-zA-Z\d!@#$%&*]{8,}$/;
+        let uPasswordRE =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}$/;
         if(!uPasswordRE.test(uPassword)){
             $(this).css('border','2px solid red');
-            $(this).next('small').show().text('please enter a valid password').css('color','red');
+            $(this).next('small').show().text('password should contain at least one upper one lower case one digit and one special character').css('color','red');
         }
         else{
             $(this).css('border','2px solid green');
             $(this).next('small').hide();
+
         }
 
     })
     $("#userConformPassword").keyup(function(){
+        let uPassword = $("#userPassword").val();
         let uConformPassword = $(this).val();
-        let uConformPasswordRE =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%&*])[a-zA-Z\d!@#$%&*]{8,}$/;
-        if(!uConformPasswordRE.test(uConformPassword)){
+        //let uConformPasswordRE =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}$/;
+        if(uPassword){
+        if(uPassword != uConformPassword){
             $(this).css('border','2px solid red');
-            $(this).next('small').show().text('please enter a valid conform password').css('color','red');
+            $(this).next('small').show().text('conform password should be match');
         }
         else{
             $(this).css('border','2px solid green');
             $(this).next('small').hide();
         }
+    }
+    else{
+        $(this).css('border', '2px solid red');
+        $(this).next('small').show().next('required');
+    }
 
     })
   </script>
