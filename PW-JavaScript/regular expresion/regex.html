@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>regular expression</title>
-    <link rel="stylesheet" href="/AI-202409D1-DISM-Repo/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -63,12 +63,12 @@
         </div>
         
         
-
+        <button class="btb btn-info" id="sub">Add</button>
 
     </div>
 
-  <script src="/AI-202409D1-DISM-Repo/JQuery/jquery-3.7.1.min.js"></script>  
-  <script src="/AI-202409D1-DISM-Repo/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/JQuery/jquery-3.7.1.min.js"></script>  
+  <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     $("#userName").keyup(function(){
@@ -131,6 +131,34 @@
     }
 
     })
+    function emptyFields (id){
+    if($(id).val() == ""){
+      $(id).css('border','2px solid red');
+      $(id).next('small').show().text('this field is required');        
+
+    }
+   }
+    $("#sub").click(function(){
+        let uName = $("#userName").val();
+        let uEmail = $("#userEmail").val();
+        let uPassword = $("#userPassword").val();
+        let uConformPassword = $("#userConformPassword").val();
+        let uNameRE = /^[a-zA-Z\s]{3,10}$/;
+          let uEmailRE =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
+          let uPasswordRE =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}$/;
+
+        emptyFields("#userName");
+        emptyFields("#userEmail");
+        emptyFields("#userPassword");
+        emptyFields("#userConformPassword");
+
+        let users = JSON.parse(localStorage.getItem('students')) || [] ;
+        if(uNameRE.test(uName) && uEmailRE.test(uEmail) && uPasswordRE.test(uPassword)){
+            users.push({'name':uName,'email':uEmail,'password':uPassword});
+            localStorage.setItem('students',JSON.stringify(users));
+            location.assign('select.html');
+        }
+    });
   </script>
 </body>
 </html>
