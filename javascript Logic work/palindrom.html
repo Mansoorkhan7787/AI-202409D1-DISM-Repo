@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom </title>
+</head>
+<body>
+    
+    <script>
+
+        let stdName = prompt(" enter a word for palindrom what you want");
+        console.log(stdName)
+        let str = stdName.split("");
+        console.log(str)
+        let strRev = str.reverse()
+        console.log(strRev)
+        let strRevJoin = strRev.join("")
+        console.log(strRevJoin)
+
+        if(stdName == strRevJoin){
+            document.write(stdName, " word is palindrom")
+        }
+        else{
+            document.write(stdName, " word is not palindrom")
+        }
+    </script>
+</body>
+</html>

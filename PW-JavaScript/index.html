@@ -3,31 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> javascript keyword</title>
+    <title> practise</title>
 </head>
 <body>
     
+    <h1> FIZZ BUZZ</h1>
+    <label> Enter a number</label>
+    <input type="number" placeholder="enter a number" id="number">
+    <input type="color" id="color">
+    <button onclick="fizzBuzz()">Start game</button>
+    <h2 id="result"></h2>
+
+   
 </body>
 </html>
 
 <script>
-    var stdName = "ali";
-    console.log(stdName)
 
-    var stdName = "ali"; 
-    console.log(stdName)
+    function fizzBuzz(){
+    let uInput = document.getElementById("number").value;
+    let Color = document.getElementById("color").value;
+    let result = document.getElementById("result");
+    result.innerHTML= " ";
 
-    let name = "hamza";
-    console.log(name);
+    for(let i=1; i<=uInput; i++){
+        if(i % 2 === 0){
+            result.innerHTML += "buzz <br>";
+        }
+        if(i % 2 === 1){
+            result.innerHTML += "fizz <br>";
+        }
+        if(i % 5 === 0){
+            result.innerHTML += "fizz buzz <br>";
+        }
+        result.style.color = color
+        result.innerHTML += `
+        
+        
+        <li> ${i}</li>    
+         
+        
+        `
+    }
 
-    name = "bilal";
-    console.log(name)
+    };
 
-    name = "basit";
-    console.log(name)
+// let userNum = prompt("enter a number for fabonachi series what you wants");
+// let x = [ ];
 
-    const course = "dism";
-    console.log(course);
+// for(let i=1; i<=userNum; i++){
+//     x[i - 1] = i;
+// }
+// document.write(x);
+
+// let fabonachi = x.reduce((x,y)=> {
+//     return x + y
+// })
+// document.write("fabonachi Series:",fabonachi);
+
+// let key = prompt("enter key what you want");
+// let value = prompt("enter value what you want");
+
+// localStorage.setItem(key,value)
+// console.log(`the value of ${key}is ${localStorage.getItem(key)}`)
+// document.write(localStorage.value(0))
 
 
  

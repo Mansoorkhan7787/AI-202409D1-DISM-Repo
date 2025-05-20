@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponent</title>
+</head>
+<body>
+    
+    <script>
+        let url = location.href;
+        console.log(url+" "+typeof(url))
+        let split = url.split("/");
+        console.log(split)
+        let indexLastValue = split[5];
+        console.log(indexLastValue)
+
+        let add = (...arr) => {
+            console.log(arr )
+        }
+        add(20,54,43)
+
+        function sum(...arr){
+            console.log(...arr)
+        }
+        sum(23+35+34+343+24+24)
+    </script>
+</body>
+</html>

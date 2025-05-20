@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    
+    <script>
+          let uInput = parseInt(prompt("Enter a number for fabonachiSeries what you want:"));
+        let num = 1;
+
+        for(let i = 1; i <= uInput; i++){
+            num = num * i;
+        }
+        if(isNaN(uInput)){
+            alert("please enter only  digit number")
+            location.assign("fabonachiSeries.html")
+        }
+        else{
+            document.write("The factorial from "+ uInput + " to 1 is"+ num)
+        }
+        
+
+        // let uInput = parseInt(prompt("enter a anumber for factorial series what you want: "));
+        // let num = 1;
+        // for(let i=uInput; i>=1; i--){
+        //     num *= i;
+        // }
+        
+        // if(isNaN(uInput)){
+        //     alert("please enter only a digit number ")
+        //     location.assign("factorial.html")
+        // }
+        // else{
+        //     document.write("The factorial from "+ uInput + " to 1 is"+ num)
+        // }
+
+    
+    </script>
+</body>
+</html>

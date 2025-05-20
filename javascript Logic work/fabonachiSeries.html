@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabonachi Series</title>
+</head>
+<body>
+    
+    <script>
+
+        // let uInput = prompt("enter a number for fabonachi series what you want");
+        // let x = [ ];
+        // for(let i=1; i<=uInput; i++) {
+        //     x[i-1] = i;
+        // }
+        // console.log(x)
+
+        // let fabonachi = x.reduce((x,y)=> {
+        //     return x + y
+        // })
+        // console.log(fabonachi)
+
+        let uInput = parseInt(prompt("Enter a number for fabonachiSeries what you want:"));
+        let sum = 0;
+
+        for(let i = 1; i <= uInput; i++){
+            sum = sum + i;
+        }
+        if(isNaN(uInput)){
+            alert("please enter only  digit number")
+            location.assign("fabonachiSeries.html")
+        }
+        else{
+            document.write("The fabonachi series from 1 to " + uInput + " is: " + sum);
+        }
+    </script>
+</body>
+</html>
