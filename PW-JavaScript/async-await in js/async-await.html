@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+
+    <script>
+            //promise function
+        // let test = new Promise(function (resolve, reject)  {
+        //     let success = false;
+        //     if(success){
+        //         resolve("data loaded successfully")
+        //     }
+        //     else{
+        //         reject("Error data loading")
+        //     }
+        // })
+        // test.then(function(res)  {
+        //     console.log(res)
+        // }).catch(function(error) {
+        //     console.log(error)
+        // })
+
+
+
+        // normal function
+    //  function test() {
+    //     return "hello";
+    //    }
+    //    console.log(test())
+
+
+        // async normal function
+    //    async function test() {
+    //     return "hello world";
+    //    }
+    //    test().then((result) => {
+    //     console.log(result)
+    //    })
+
+    
+        // async arrow function
+    // let test = async () => "hello world";
+       
+    //    test().then((result) => {
+    //     console.log(result)
+    //    })
+
+
+    
+
+
+
+
+                                  // await 
+    //  async function test() {
+    //     console.log("2 : message");
+    //     console.log("3 : message");
+    //     console.log("4 : message");
+    //    }
+    //    console.log("1 : message");
+    //    test()
+    //    console.log("5 : message");
+
+
+        //await method
+    // async function test() {
+    //     console.log("2 : message");
+    //    await console.log("3 : message");
+    //     console.log("4 : message");
+    //    }
+    //    console.log("1 : message");
+    //    test()
+    //    console.log("5 : message");
+
+
+    // async function test() {
+    //     console.log("2 : message");
+    //     let response = await fetch("/AI-202409D1-DISM-Repo/Json-syntex/product.json ");
+    //     console.log("3 : message");
+    //     let products = await response.json();
+    //     console.log("4 : message");
+        
+    //   return products
+    //    }
+    //    console.log("1 : message");
+    //    let a = test()
+    //    console.log("5 : message");
+    //    console.log(a)
+
+
+    // async function test() {
+    //     console.log("3 : message");
+    //     console.log("2 : message");
+    //     let response = await fetch("/AI-202409D1-DISM-Repo/Json-syntex/product.json ");
+    //     let products =  response.json();
+    //     console.log("1 : message");
+    //     console.log("5 : message");
+        
+    //   return products
+    //    }
+
+    //    test().then((res) => {
+    //     console.log(res);
+    //    }).catch((error) => {
+    //     console.log(error);
+    //    });
+
+
+    // async function test() {
+    //     return (await fetch("/AI-202409D1-DISM-Repo/Json-syntex/product.json ")).json();
+   
+    //    }
+    //    test().then((res) => {
+    //     console.log(res);
+    //    }).catch((error) => {
+    //     console.log(error);
+    //    });
+
+
+     let test = new Promise(function(resolve, reject)  {
+         let success =false;
+         if(success){
+             resolve("data loaded successfully")
+         }
+         else{
+             reject("data error loaded")
+         }
+     })
+     test.then(function(res) {
+         console.log(res)
+     }).catch(function(error) {
+         console.log(error)
+     })
+
+    // async function loadData( ) {
+    //     let success = false;
+    //     if(success){
+    //         let result = "data load successfully"
+    //         console.log(result)
+    //     }else{
+    //         let error = "data not successfully loaded"
+    //         console.log(error)
+    //     }
+    // }
+    // loadData()
+
+
+
+    
+    </script>
+</body>
+</html>

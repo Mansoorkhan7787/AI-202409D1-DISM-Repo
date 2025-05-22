@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let first = parseInt(prompt("enter a first value"));
+        let arigthmeticOperator = prompt("enter arigthmeticOperator what you want +,- ,* ,/");
+        let second = parseInt(prompt("enter a second value"));
+
+        if(arigthmeticOperator == "+"){
+            if(isNaN(first) || isNaN(second)){
+                alert("please enter only a digit number")
+                location.assign("arigthmetic Operator.html")
+            }else{
+                result = first + second;
+            alert(`the sum of ${first} + ${second} is  equal to : ${result}`)
+            location.assign("arigthmetic Operator.html")
+            }
+        }else if(arigthmeticOperator == "*"){
+            if(isNaN(first) || isNaN(second)){
+                alert("please enter only a digit number")
+                location.assign("arigthmetic Operator.html")
+            }else{
+                result = first * second;
+            alert(`the multiplication of ${first} * ${second} is  equal to : ${result}`)
+            location.assign("arigthmetic Operator.html")
+            }
+        }else if(arigthmeticOperator == "/"){
+            if(isNaN(first) || isNaN(second)){
+                alert("please enter only a digit number")
+                location.assign("arigthmetic Operator.html")
+            }else{
+                result = first / second;
+            alert(`the division of ${first} / ${second} is  equal to : ${result}`)
+            location.assign("arigthmetic Operator.html")
+            }
+        }else if(arigthmeticOperator == "-"){
+            if(isNaN(first) || isNaN(second)){
+                alert("please enter only a digit number")
+                location.assign("arigthmetic Operator.html")
+            }else{
+                result = first - second;
+            alert(`the subtraction of ${first} - ${second} is  equal to : ${result}`)
+            location.assign("arigthmetic Operator.html")
+            }
+        }
+        else{
+            alert("please fill all the input")
+        }
+    </script>
+</body>
+</html>

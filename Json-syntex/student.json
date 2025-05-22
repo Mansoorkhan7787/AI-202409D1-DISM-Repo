@@ -6,6 +6,7 @@
     "studentHobbies": ["cricket","reading","coading"],
     "studentAddress": {"karachi": "saddar", "peshawar": "swat"}
 },
+
 {
     "studentId": "AI-202502E1",
     "studentAge": 18,
